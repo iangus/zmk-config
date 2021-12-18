@@ -39,7 +39,7 @@ jobs:
       - name: West Zephyr export
         run: west zephyr-export
       - name: West Build (LEVINSON)
-        run: west build -s zmk/app -b nice_nano -- -DSHIELD=levinson -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+        run: west build -s zmk/app -b nice_nano -- -DSHIELD=levinson_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: LEVINSON DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/nice_nano.dts.pre.tmp
