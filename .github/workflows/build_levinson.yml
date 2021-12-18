@@ -5,7 +5,7 @@ on:
   pull_request:
   workflow_dispatch:
 
-name: Build Contra
+name: Build Levinson
 
 jobs:
   build:
